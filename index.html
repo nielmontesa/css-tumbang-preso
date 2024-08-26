@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tumbang Preso</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="public/lata.svg">
+</head>
+
+<body class="flex justify-center w-full">
+    <main class="p-8 flex justify-center flex-col align-center gap-4 max-w-xl">
+        <h2 class="text-center text-white font-bold	text-6xl">CSS Tumbang Preso</h2>
+        <p class="text-xl text-center">Use CSS Flexbox to move the slippers to hit the cans!</p>
+        <div class="instructions flex flex-col">
+            <b>Level 1: Introduction to Flexbox</b>
+            <p>
+                Move the slippers to the can on the right by using the <code>justify-content</code> property, which
+                aligns
+                items
+                horizontally. It
+                acceps the following values:</p>
+            <ul class="list-disc list-inside">
+                <li> <code>flex-start</code> Items align to the left side of the container.</li>
+                <li><code>flex-end</code> Items align to the right side of the container.</li>
+                <li><code>center:</code> Items align at the center of the container.</li>
+                <li><code>space-between</code> Items display with equal spacing between them.</li>
+                <li><code>space-around</code> Items display with equal spacing around them.</li>
+            </ul>
+        </div>
+        <div class="code-area">
+            <div class="flex justify-between">
+                <b>Code</b>
+                <p class="status opacity-80">Press enter to submit.</p>
+            </div>
+            <code class="opacity-90">.tsinelas {  <br> display:flex;</code>
+            <textarea rows="1" cols="1" id="" autofocus placeholder="Enter your code here!" class="px-4"></textarea>
+            <code>}</code>
+        </div>
+        <div class="playground-container-wrapper relative">
+            <!-- Duplicated container -->
+            <div class="playground absolute top-0 left-0 w-full h-full">
+                <b>Playground</b>
+                <div class="w-full"></div>
+                <div class="player-container playground-container flex justify-start h-full items-start">
+                    <div class="card player-card"><img src="public/tsinelas.svg" alt="" class="opacity-1"></div>
+                </div>
+            </div>
+
+            <!-- Original container -->
+            <div class="playground relative flex flex-col">
+                <b>Playground</b>
+                <div class="w-full"></div>
+                <div class="playground-container grid grid-rows-3 grid-cols-3 gap-3">
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-70"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                    <div class="card"><img src="public/lata.svg" alt="" class="opacity-0"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between">
+            <button class="px-4 py-2 bg-[#373737] rounded-md opacity-50" disabled>← Previous Level</button>
+            <a href="level2/index.html">
+                <button class="px-4 py-2 bg-[#373737] rounded-md next">Next Level →</button></a>
+
+        </div>
+    </main>
+</body>
+
+</html>
